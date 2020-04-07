@@ -112,7 +112,7 @@ php vendor/eftec/pdoone/lib/PdoOne.php -database mysql -server 127.0.0.1 -user r
 
 This connects to a mysql database located in the server 127.0.0.1, user root, password abc.123, database testdb and table "user" (table created in the previous step). It will generate the whole class.
 
-Lets save this class in a new folder folder called repo
+Copy the code and save it inside a new code in a new folder folder called repo
 
 📁 repo
 
@@ -122,11 +122,17 @@ Lets save this class in a new folder folder called repo
 
 ## Finishing the Class Repo
 
-Let's add the namespace to the class
+While the class is complete but it misses a line, the namespace, so let's add the namespace to the class
 
 ```php
 namespace PdoOne_login\repo;
 ```
+
+why **PdoOne_login**?  It is because psr-4 (the line added in composer.json)
+
+And **why repo**? It is because the folder is called **repo**.
+
+
 
 ## Creating the views
 
@@ -135,6 +141,10 @@ namespace PdoOne_login\repo;
 ​     📝 login.blade.php   login template
 
 ​     📝 start.blade.php   start template (when we load)
+
+I used the html code form https://bootsnipp.com/tags/login
+
+I edited a bit and here, then I added the notation of Bladeone (check the library for more information)
 
 ## Boilerplate code
 
@@ -247,22 +257,48 @@ echo bladeOne()->run('login'
 
 It works as follow
 
-* if buttonlogin is false (not pressed) then
+* if **buttonlogin** is false (not pressed) then
   * It sets some default values (empty user and password)
-* If buttonlogin is not false then
+* If **buttonlogin** is not false then
   * It reads the user and password.
   * If it not fails (it could fail if the user has less than 3 characters or other conditions )
-    * We read from the database. We use the UserRepo class to read using the primary key.
+    * We read from the database. We use the **UserRepo** class to read using the primary key.
       * If the user (from the database) is false or if the password (read from the database) is not equals to the input password then
         * It adds an error
       * Otherwise
         * It stores the user in the session
         * Redirect to the login page
-* Finally, it shows the template using the library BladeOne
+* Finally, it shows the template using the library **BladeOne**
+
+## Final testing
+
+We should not forget to add a new user into the database.
+
+Login into our webserver and so we could test it.
+
+![](img/img1.jpg)
 
 
 
+## Security
 
+The password is not hash-ed into the database.
 
+How to hash it?
 
+Change the code
+
+```
+$userDB['password']!=$password
+```
+
+as
+
+```$userDB['password']!= hash('sha256', $password.$SALT)```
+
+where $SALT is a secret value defined in app.php
+
+`$SALT='asdk sk padk se4'3485'4385'¡4reorekkhptrkhptrkhk trhyktrpkptrkh+d+';// It is an example` 
+
+The value must be also store hashed in the database.
 
