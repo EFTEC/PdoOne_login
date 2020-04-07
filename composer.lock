@@ -1,0 +1,179 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "35d7fb89e1235a9d1c9843d6482fc991",
+    "packages": [
+        {
+            "name": "eftec/bladeone",
+            "version": "3.37",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/BladeOne.git",
+                "reference": "88a571c4a2a9b4c8f53c2da98cc0499d0654155d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/88a571c4a2a9b4c8f53c2da98cc0499d0654155d",
+                "reference": "88a571c4a2a9b4c8f53c2da98cc0499d0654155d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16.1",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.5.4"
+            },
+            "suggest": {
+                "ext-mbstring": "This extension is used if it's active"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.37-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "eftec\\bladeone\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Patricio Castro Castillo",
+                    "email": "jcastro@eftec.cl"
+                }
+            ],
+            "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+            "homepage": "https://github.com/EFTEC/BladeOne",
+            "keywords": [
+                "blade",
+                "php",
+                "template",
+                "templating",
+                "view"
+            ],
+            "time": "2020-03-10T15:34:49+00:00"
+        },
+        {
+            "name": "eftec/pdoone",
+            "version": "1.28.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/PdoOne.git",
+                "reference": "023e55078abbb504db73f9bf5778187bba8b0923"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/PdoOne/zipball/023e55078abbb504db73f9bf5778187bba8b0923",
+                "reference": "023e55078abbb504db73f9bf5778187bba8b0923",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "ext-pdo": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.11",
+                "phpunit/phpunit": "^5.7 || ^6.5",
+                "squizlabs/php_codesniffer": "~3.3.2"
+            },
+            "suggest": {
+                "eftec/validationone": "For keeping and storing the messages"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Castro Castillo",
+                    "homepage": "https://github.com/EFTEC/"
+                }
+            ],
+            "description": "Procedural PDO Data access class in a single Class",
+            "homepage": "https://github.com/EFTEC/PdoOne",
+            "keywords": [
+                "dao",
+                "pdo",
+                "php"
+            ],
+            "time": "2020-04-07T00:57:54+00:00"
+        },
+        {
+            "name": "eftec/validationone",
+            "version": "1.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/ValidationOne.git",
+                "reference": "6194f867e6903e26d6b704525305430ff131a9c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/ValidationOne/zipball/6194f867e6903e26d6b704525305430ff131a9c0",
+                "reference": "6194f867e6903e26d6b704525305430ff131a9c0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7.27"
+            },
+            "suggest": {
+                "eftec/formone": "Allows to create form and integrates with the validation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Castro",
+                    "email": "jorge.castro.c@gmail.com"
+                }
+            ],
+            "description": "It's a php library for fetch and validate fields ",
+            "homepage": "https://github.com/EFTEC/ValidationOne",
+            "keywords": [
+                "library",
+                "php",
+                "validation"
+            ],
+            "time": "2020-04-07T14:01:36+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9704ab0a-8ce4-45cd-aae2-c50828bae1cd" name="local" url="http://localhost/examples/PdoOne_login">
+        <fileTransfer port="0" mountedRoot="D:\dropbox\www\examples\PdoOne_login" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

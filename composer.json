@@ -1,0 +1,21 @@
+{
+    "name": "eftec/pdoone_login",
+    "description": "example of a login page",
+    "type": "project",
+    "require": {
+        "eftec/pdoone": "^1.28",
+        "eftec/bladeone": "^3.37",
+        "eftec/validationone": "^1.23.1"
+    },
+    "autoload": {
+        "psr-4": {"PdoOne_login\\": ""}
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Jorge Castro",
+            "email": "jorge.castro.c@gmail.com"
+        }
+    ]
+    
+}
