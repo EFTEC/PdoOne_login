@@ -197,7 +197,7 @@ function validationOne() {
 }
 ```
 
-What it does?
+What does it do?
 
 It creates the instance of PdoOne (database), ValidationOne (validation and message container) and BladeOne (template)
 

@@ -1,4 +1,8 @@
 <?php
+/**
+ * @copyright Jorge Castro C.
+ * @see https://github.com/EFTEC/PdoOne_login           
+ */
 
 use PdoOne_login\repo\UserRepo;
 
