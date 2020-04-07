@@ -8,7 +8,7 @@
 <div class="wrapper fadeInDown">
  <div id="formContent">
  <!-- Tabs Titles -->
-
+ <br>
  <!-- Icon -->
  <div class="fadeIn first">
  <img src="https://avatars3.githubusercontent.com/u/19829219?s=200&v=4" style="width:128px; height:128px;" id="icon" alt="User Icon" />

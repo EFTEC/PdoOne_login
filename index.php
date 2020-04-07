@@ -31,9 +31,6 @@ if($buttonlogin===false) {
 }
 
 
-
-
-
 echo bladeOne()->run('login'
     ,['login'=>$login,
         'password'=>$password]);

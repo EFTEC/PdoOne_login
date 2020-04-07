@@ -3,6 +3,7 @@
 
 use eftec\bladeone\BladeOne;
 use eftec\PdoOne;
+use eftec\ValidationOne;
 
 include __DIR__."/../vendor/autoload.php";
 
@@ -13,7 +14,7 @@ include __DIR__."/../vendor/autoload.php";
 $bladeOne=null;
 /** @var PdoOne $pdoOne */
 $pdoOne=null;
-/** @var \eftec\ValidationOne $validationOne */
+/** @var ValidationOne $validationOne */
 $validationOne=null;
 
 function bladeOne() {
@@ -35,7 +36,7 @@ function pdoOne() {
 function validationOne() {
     global $validationOne;
     if($validationOne===null) {
-        $validationOne=new \eftec\ValidationOne();
+        $validationOne=new ValidationOne();
     }
     return $validationOne;
 }
